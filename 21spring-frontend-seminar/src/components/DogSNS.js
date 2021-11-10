@@ -28,7 +28,7 @@ const DogSNS = () => {
     fetch(`http://localhost:3000/breed/${breed}`)
       .then(data => data.json())
       .then(result => {
-        setDogs(result)
+        setDogs(result.message)
       })
   }, [breed])
 

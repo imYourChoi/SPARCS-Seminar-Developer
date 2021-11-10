@@ -5,9 +5,13 @@ const DogFetch = () => {
 
   useEffect(() => {
     fetch('http://localhost:3000/dog-fetch/')
-      .then(data => data.json())
+      .then(data => {
+        // console.log(data.json())
+        return data.json()
+      })
       .then(result => {
-        setImageURL(result)
+        // console.log(result)
+        setImageURL(result.message)
       });
   }, [])
 
