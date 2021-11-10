@@ -1,0 +1,8 @@
+div.dogsns-list {
+    display: flex;
+    flex-direction: column;
+}
+
+div.dogsns-row {
+    display: flex;
+}
